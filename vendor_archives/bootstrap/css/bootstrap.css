@@ -6628,6 +6628,10 @@ textarea.form-control-lg {
   width: 50% !important;
 }
 
+.w-65 {
+  width: 65% !important;
+}
+
 .w-75 {
   width: 75% !important;
 }
@@ -7485,7 +7489,7 @@ textarea.form-control-lg {
 .bg-light {
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 22px 0 rgba(0, 0, 0, 0.19);
 
-  background-color: #F1F1F1 !important;
+  background-color: #d6d6d6 !important;
 }
 
 .bg-dark {
@@ -11033,16 +11037,14 @@ textarea.form-control-lg {
 
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-  top:70vh;
-  z-index:100;
-  color:#3cb9ea !important;
-  padding:2px;
-/*  right:-13vw;*/
-  /*left:84.5%;
-*/
-  left:85.5vw;
-
+  
+    position: fixed;
+    bottom: 20vh;
+    z-index: 100;
+    color:#3cb9ea !important;
+    padding:2px;
+    left: auto;
+    right: -100px;
 }
 
 /*Menu de Navegacion*/
@@ -11283,40 +11285,20 @@ list-style: none !important;
 /*media screen responsive*/
 
     /*email adress sticky*/
-@media screen and (min-width: 2560px) {
-.email-sticky{
-  right:-15vw;
-  }
+
+@media (max-width: 1080px){
+.email-sticky {
+    left: auto;
+    right: -110px;
 }
-
-@media (min-width: 1000px) {
-.email-sticky{
-  left:81.5% !important;
-
-  }
-}
-
-@media (min-width: 900px) {
-.email-sticky{
-  left:79.5%;
-
-  }
-}
-
-@media (min-width: 800px) {
-.email-sticky{
-  left:77.5%;
-
-  }
-  
 }
 
 
-@media (max-width: 750px) {
-.email-sticky{
-  display:none;
+@media screen and (max-width: 768px) {
+.email-sticky {
 
-  }
+  display:none !important;
+}
 }
 
 
