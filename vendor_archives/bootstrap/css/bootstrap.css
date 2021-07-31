@@ -51,20 +51,7 @@
 
 
 body {
-
-      background: linear-gradient(
-63deg
-, #eaeaea 5px, transparent 5px) 0 5px, linear-gradient(
-243deg
-, #eaeaea 5px, transparent 5px) 10px 0px, linear-gradient(
-63deg
-, #dddddd 5px, transparent 5px) 0px 10px, linear-gradient(
-243deg
-, #dddddd 5px, transparent 5px) 10px 5px, linear-gradient(
-0deg
-, #e4e4e4 10px, transparent 10px), linear-gradient(#e2e2e2 25%, #e5e5e5 25%, #e5e5e5 50%, transparent 50%, transparent 75%, #dbdbdb 75%, #dbdbdb);
-    background-size: 20px 20px;
-    background-color: #ececec;
+  background-color: #f5f5f5;
 
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -5876,9 +5863,9 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.6  ;
+  opacity: 1  ;
   transition: opacity 0.15s ease;
-  background-color:rgb(0 0 0 / 15%);
+  background-color:rgb(0 0 0 / 17%);
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -5892,7 +5879,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carousel-control-prev {
@@ -7467,7 +7454,7 @@ textarea.form-control-lg {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #dcdcdc !important;
 }
 
 .bg-success {
@@ -7489,7 +7476,7 @@ textarea.form-control-lg {
 .bg-light {
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 22px 0 rgba(0, 0, 0, 0.19);
 
-  background-color: #d6d6d6 !important;
+  background-color: #e5e4e2 !important;
 }
 
 .bg-dark {
@@ -11173,21 +11160,35 @@ width:480px !important;
 .services .card {
   height:340px;
   
+
 }
 
 /*portfolio*/
+/*
+.portfolio-img-content{
+ 
+  overflow: scroll;
+        height: 30rem !important;
+
+  
+}*/
 
 .img-portfolio{
   width:100% !important;
-  height:18rem !important;
+  height:17rem !important;
+
+  flex: 0 0 100%;
+
+  object-fit: cover;
+
 }
 
 
 
 .portfolio-item{
-display:inline-block;
 position:relative;
 }
+
 
 .portfolio .portfolio-item .portfolio-item-caption {
   z-index:100;
@@ -11203,7 +11204,7 @@ color:white;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
-    opacity: 0.6;
+    opacity: 0.5;
   
 }
 
@@ -11249,8 +11250,8 @@ list-style: none !important;
 }
 
 .email-sticky:before,.email-sticky:after,
-.navbar-brand:hover:before,.section-links a:hover:before,.portfolio-item:before,
-.navbar-brand:hover:after,.section-links a:hover:after,.portfolio-item:after{
+.navbar-brand:hover:before,.section-links a:hover:before/*,.portfolio-item:before*/,
+.navbar-brand:hover:after,.section-links a:hover:after/*,.portfolio-item:after*/{
   z-index:100;
   position: absolute;
   content: "";
@@ -11259,7 +11260,7 @@ list-style: none !important;
 
 
 .email-sticky:before,
-.navbar-brand:hover:before,.section-links a:hover:before,.portfolio-item:before{
+.navbar-brand:hover:before,.section-links a:hover:before/*,.portfolio-item:before*/{
   border-bottom: 2px solid #3cb9ea;
   border-left: 2px solid #3cb9ea;
   width: 10%;
@@ -11271,7 +11272,7 @@ list-style: none !important;
 
 
 .email-sticky:after,
-.navbar-brand:hover:after,.section-links a:hover:after,.portfolio-item:after{
+.navbar-brand:hover:after,.section-links a:hover:after/*,.portfolio-item:after*/{
   border-top: 2px solid #3cb9ea;
   border-right: 2px solid #3cb9ea;
   width: 10%;
