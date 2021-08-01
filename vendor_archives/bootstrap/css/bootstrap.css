@@ -10977,11 +10977,11 @@ textarea.form-control-lg {
 }
 .bg-grandient{
   
-   background: #d1d1d1; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(60deg, #f0f0f0, #d1d1d1); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(60deg, #f0f0f0, #d1d1d1); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(60deg, #f0f0f0, #d1d1d1); /* For Firefox 3.6 to 15 */
- background: linear-gradient(60deg, #f0f0f0, #d1d1d1); /* Standard syntax */
+   background: #D1D1D159; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(60deg, #F2F1F1, #D1D1D159); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(60deg, #F2F1F1, #D1D1D159); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(60deg, #F2F1F1, #D1D1D159); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(60deg, #F2F1F1, #D1D1D159); /* Standard syntax */
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
 }
