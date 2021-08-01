@@ -11306,11 +11306,11 @@ list-style: none !important;
 }
 
 
-#about li {
+#about li, .portfolio-modal li{
 	list-style: none !important;
 }
 
-#about ul li::before {
+#about ul li::before,.portfolio-modal li:before {
 	content: ">";
 	color: #3cb9ea;
 	display: inline-block;
