@@ -62,13 +62,13 @@ background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
 background:
     radial-gradient(#b0b0b0 3px, transparent 4px),
     radial-gradient(#b0b0b0 3px, transparent 4px),
-    linear-gradient(#e8e8e8 4px, transparent 0),
+    linear-gradient(#fcfcfc 4px, transparent 0),
     linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
     linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
     #fff;
     background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-    background-color:#e8e8e8;
+    background-color:#fcfcfc;
     
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -11002,11 +11002,11 @@ textarea.form-control-lg {
 }
 .bg-gradient-main{
   
-   background: #e5e3e3; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(60deg, #eaeaea, #e5e3e3); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(60deg, #eaeaea, #e5e3e3); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(60deg, #eaeaea, #e5e3e3); /* For Firefox 3.6 to 15 */
- background: linear-gradient(60deg, #eaeaea, #e5e3e3); /* Standard syntax */
+   background: #efefef; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(60deg, #f7f7f7, #efefef); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(60deg, #f7f7f7, #efefef); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(60deg, #f7f7f7, #efefef); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(60deg, #f7f7f7, #efefef); /* Standard syntax */
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
 }
