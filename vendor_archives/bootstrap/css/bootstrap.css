@@ -8258,7 +8258,9 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
+
 @media (min-width: 768px) {
+  
   .float-md-start {
     float: left !important;
   }
@@ -11410,4 +11412,22 @@ list-style: none !important;
 
 .skills__indicator-level{
    margin-left: -1.5rem !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .about__skils-col--2{
+    margin-top:10% !important;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .about__skils-col--2{
+    margin-top:1% !important;
+  }
+
+  .space-list{
+    display:none;
+  }
+
 }

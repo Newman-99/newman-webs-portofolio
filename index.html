@@ -220,11 +220,11 @@
           
           </div>
           
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mt-auto mb-auto">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mt-auto mb-auto about__skils-col--2">
           
-          <div class="h5"><br><br></div>
+          <div class="h5 space-list"><br><br></div>
 
-          <ul class="lead about__skils-list mb-0">
+          <ul class="lead about__skils-list about__skils-list--2 mb-0">
 
             <li class="about__skils-list-item">JavaScript</li>
             
@@ -348,7 +348,7 @@
       <!-- Contact Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase mb-4">Contactame</h2>
 
-          <form class="" id="form">
+          <form class="pb-2" id="form">
         
 
         <div class="row">
@@ -379,11 +379,13 @@
             </div>
             
             <br>
-            <div id="success"></div>
-            <div class="form-group text-center pb-4">
+            <div class="form-group text-center">
               <button type="submit" class="btn btn-xl btn-first" id="send_email" value="Send">Enviar</button>
             </div>
             
+            <div id="success"class="fs-5 text-success text-center mt-3"></div>
+            <div id="error" class="fs-5 text-danger text-center mt-3"></div>
+
           </form>
 
       <div class="row mt-4  w-85 mx-auto">
@@ -575,10 +577,9 @@
                   <div class="carousel-item" data-bs-interval="5000">
                     <img src="img/portfolio/proyecto-wordpress-tienda-carrito.png" class="d-block w-100" alt="proyecto wordpress tienda carrito">
                   </div>
-                  
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#portfolio__carousel--2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span1
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Anterior</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#portfolio__carousel--2" data-bs-slide="next">
@@ -734,7 +735,7 @@ Crea una vía de comunicación, mejora la relación con tus clientes y aumenta s
                 </button>
 
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3 text-center">Tienda y Pagina de Aterrizaje - Tecnologia</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-3 text-center">Tienda y Pagina de Aterrizaje - Taller Mecanico</h2>
                 <!-- Icon Divider -->
 
                 <!-- Portfolio Modal - Carousel -->
@@ -843,7 +844,6 @@ Crea una vía de comunicación, mejora la relación con tus clientes y aumenta s
 
   <script src="vendor_archives/mdb/js/mdb.min.js1"></script>
 
-
   <script src="vendor_archives/aos-master/dist/aos.js"></script>
 
   <script>   AOS.init({
@@ -863,24 +863,31 @@ Crea una vía de comunicación, mejora la relación con tus clientes y aumenta s
     <!-- EMAIL JS-->
         <script type="text/javascript">
         window.onload = function() {
+
             const btn = document.getElementById('send_email');
+            const error = document.getElementById('error');
+            const success = document.getElementById('success');
             
             document.getElementById('form')
              .addEventListener('submit', function(event) {
                event.preventDefault();
             
-               btn.value = 'Sending...';
+               btn.innerHTML = 'Enviando...';
+               
+               btn.value = 'Enviando...';
             
                const serviceID = 'default_service';
                const templateID = 'template_44vkxtg';
             
                emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
-                  btn.value = 'Send Email';
-                  alert('Sent!');
+                    
+                    success.innerHTML = 'Correo enviado, en breve sera atendido.';
+                      btn.innerHTML = 'Enviar';
+
                 }, (err) => {
-                  btn.value = 'Send Email';
-                  alert(JSON.stringify(err));
+                    btn.innerHTML = 'Enviar';
+                    error.innerHTML = 'Ha ocurrido un error inesperado: <br>'+JSON.stringify(err);
                 });
             });        }
     </script>
