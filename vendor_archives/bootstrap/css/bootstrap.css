@@ -62,18 +62,19 @@ background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
 background:
     radial-gradient(#b0b0b0 3px, transparent 4px),
     radial-gradient(#b0b0b0 3px, transparent 4px),
-    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(#ECEFF1 4px, transparent 0),
     linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
     linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
     #fff;
     background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-color:#ECEFF1;
     
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #606470;
+  color: #4F525D;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -96,7 +97,7 @@ hr:not([size]) {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color:#606470;
+  color:#4F525D;
 }
 
 h2,.h2{
@@ -113,7 +114,7 @@ h6, .h6, h5, .h5{
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color:#606470;
+  color:#4F525D;
 
   
 }
@@ -254,7 +255,7 @@ sup {
 }
 
 a {
-  color: #606470;
+  color: #4F525D;
   text-decoration: underline;
 }
 
@@ -10947,7 +10948,7 @@ textarea.form-control-lg {
 }
 
 .secondary-text-color {
-  color: #606470;
+  color: #4F525D;
 }
 
 .divider-color {
@@ -11001,11 +11002,11 @@ textarea.form-control-lg {
 }
 .bg-gradient-main{
   
-   background: #f0f0f0; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(60deg, #E6E9E9, #f0f0f0); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(60deg, #E6E9E9, #f0f0f0); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(60deg, #E6E9E9, #f0f0f0); /* For Firefox 3.6 to 15 */
- background: linear-gradient(60deg, #E6E9E9, #f0f0f0); /* Standard syntax */
+   background: #efefef; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(60deg, #f7f7f7, #efefef); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(60deg, #f7f7f7, #efefef); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(60deg, #f7f7f7, #efefef); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(60deg, #f7f7f7, #efefef); /* Standard syntax */
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -11050,18 +11051,18 @@ textarea.form-control-lg {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   
     position: fixed;
-    bottom: 20vh;
+    bottom: 24vh;
     z-index: 100;
     color:#3cb9ea !important;
     padding:2px;
     left: auto;
-    right: -100px;
+    right: -121px;
 }
 
 /*Menu de Navegacion*/
 
 .section-links a, nav .navbar-brand{
-    color: #606470;
+    color: #4F525D;
 }
 
 .section-links a:hover, nav .navbar-brand:hover{
@@ -11157,7 +11158,7 @@ width:65px !important;
 .web-designer__img--tablet{
 width:100px !important;
     position:absolute;
-  margin-left:-50px;
+  margin-left:-40px;
   margin-top:120px;
 
 }
@@ -11246,10 +11247,10 @@ form:after{
   position: absolute;
   content: "";
   border-bottom: 2px solid #3cb9ea;
-  width: 30%;
+  width: 20%;
   top: 101%;
-  left:35%;
-  
+  left:40%;
+
 }
 
 
@@ -11306,11 +11307,11 @@ list-style: none !important;
 }
 
 
-#about li {
+#about li, .portfolio-modal li{
 	list-style: none !important;
 }
 
-#about ul li::before {
+#about ul li::before,.portfolio-modal li:before {
 	content: ">";
 	color: #3cb9ea;
 	display: inline-block;
@@ -11395,13 +11396,13 @@ list-style: none !important;
   }
   
   .web-designer__img--tablet{
-  margin-left:-100px !important;
+  margin-left:-40px !important;
 
 }
 
 .web-designer__img--movil{
   z-index:100;
-  margin-left:30px !important;
+  margin-left:-20px !important;
 
 }
 
